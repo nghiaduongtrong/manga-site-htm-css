@@ -70,7 +70,11 @@ a {
 .header {
   width: 100%;
   height: 4.5rem;
-  background-image: linear-gradient(45deg, var(--primary-color) 60%, var(--secondary-color));
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color) 60%,
+    var(--secondary-color)
+  );
   color: var(--white);
   display: flex;
   align-items: center;
@@ -247,7 +251,11 @@ a {
   width: 100%;
   height: 100%;
   padding: 0.3rem;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .slick-dots {
@@ -372,7 +380,11 @@ a {
   font-size: 1.4rem;
   width: 3rem;
   height: 3rem;
-  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   position: relative;
   top: 0.8rem;
   margin-right: 1.5rem;
@@ -535,7 +547,11 @@ a {
   font-weight: bold;
   color: var(--white);
   padding: 0.8rem 1.5rem;
-  background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   position: relative;
   margin-bottom: 2rem;
 }
@@ -687,6 +703,37 @@ a {
   .right-content {
     padding-left: 3rem;
   }
+}
+
+.browes-manga {
+  --browes-col: 2;
+  background-color: var(--gray-color-light);
+  padding: 5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .browes-manga {
+    --browes-col: 4;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .browes-manga {
+    --browes-col: 6;
+  }
+}
+.browes-manga__heading {
+  text-transform: uppercase;
+}
+.browes-manga__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.browes-manga__item {
+  font-weight: bold;
+  padding: 1rem;
+  width: calc(100% / var(--browes-col));
+}
+.browes-manga__item i {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
