@@ -700,3 +700,30 @@ a {
     padding-left: 3rem;
   }
 }
+
+.browes-manga {
+  --browes-col: 2;
+  @include tablet() {
+    --browes-col: 4;
+  }
+  @include laptop() {
+    --browes-col: 6;
+  }
+  background-color: var(--gray-color-light);
+  padding: 5rem 0;
+  &__heading {
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    font-weight: bold;
+    padding: 1rem;
+    i {
+      margin-right: 1rem;
+    }
+    width: calc(100% / var(--browes-col));
+  }
+}
